@@ -3,6 +3,7 @@ import profile from '../../assets/icon/Profile.png'
 import wallet from '../../assets/icon/wallet.png'
 import refund from '../../assets/icon/refund.png'
 import { MdOutlineNavigateNext } from 'react-icons/md';
+import Image from "next/image";
 
 const FaqComponents = () => {
     return (

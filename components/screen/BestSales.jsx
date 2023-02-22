@@ -36,7 +36,7 @@ const BestSales = () => {
           ))}
         </div>
         <div className="mt-12 flex justify-center">
-          <Link to="/categories">
+          <Link href="/categories">
             {" "}
             <button className="bg-primary-600 hover:bg-primary-500 duration-300 transition hover:shadow-custom hover:scale-110 text-white font-semibold rounded-md uppercase ease-in-out px-[20px] py-[9px] flex items-center gap-1 text-[14px] md:text-[14px]">
               <span>Shop Now</span>

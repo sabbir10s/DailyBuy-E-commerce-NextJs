@@ -4,6 +4,7 @@ import small1 from "../../assets/product-details/cup/small_product (1).png";
 import small2 from "../../assets/product-details/cup/small_product (2).png";
 import small3 from "../../assets/product-details/cup/small_product (3).png";
 import small4 from "../../assets/product-details/cup/small_product (4).png";
+import Image from "next/image";
 
 const SmallProductImg = ({ setActiveImg }) => {
   const settings = {
@@ -44,22 +45,22 @@ const SmallProductImg = ({ setActiveImg }) => {
     <div>
       <Slider {...settings}>
         <div className=" px-2">
-          <img onClick={() => setActiveImg(small1)} className="w-full h-full object-center object-fill rounded-2xl" src={small1} alt="" />
+          <Image onClick={() => setActiveImg(small1)} className="w-full h-full object-center object-fill rounded-2xl" src={small1} alt="" />
         </div>{" "}
         <div className=" px-2">
-          <img onClick={() => setActiveImg(small2)} className="w-full h-full object-center object-fill rounded-2xl" src={small2} alt="" />
+          <Image onClick={() => setActiveImg(small2)} className="w-full h-full object-center object-fill rounded-2xl" src={small2} alt="" />
         </div>{" "}
         <div className=" px-2">
-          <img onClick={() => setActiveImg(small2)} className="w-full h-full object-center object-fill rounded-2xl" src={small2} alt="" />
+          <Image onClick={() => setActiveImg(small2)} className="w-full h-full object-center object-fill rounded-2xl" src={small2} alt="" />
         </div>{" "}
         <div className=" px-2">
-          <img onClick={() => setActiveImg(small3)} className="w-full h-full object-center object-fill rounded-2xl" src={small3} alt="" />
+          <Image onClick={() => setActiveImg(small3)} className="w-full h-full object-center object-fill rounded-2xl" src={small3} alt="" />
         </div>{" "}
         <div className=" px-2">
-          <img onClick={() => setActiveImg(small4)} className="w-full h-full object-center object-fill rounded-2xl" src={small4} alt="" />
+          <Image onClick={() => setActiveImg(small4)} className="w-full h-full object-center object-fill rounded-2xl" src={small4} alt="" />
         </div>{" "}
         <div className=" px-2">
-          <img onClick={() => setActiveImg(small4)} className="w-full h-full object-center object-fill rounded-2xl" src={small4} alt="" />
+          <Image onClick={() => setActiveImg(small4)} className="w-full h-full object-center object-fill rounded-2xl" src={small4} alt="" />
         </div>
       </Slider>
     </div>

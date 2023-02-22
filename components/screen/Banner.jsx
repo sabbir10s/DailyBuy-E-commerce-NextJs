@@ -12,7 +12,7 @@ const Banner = () => {
           <h2 className="mt-[4px] md:mt-[10px] mb-[13px] font-bold text-primary-900 text-[20px] md:text-[25px] lg:text-[32px] leading-[22px] md:leading-[35px] lg:leading-[48px]">Make your life <br /> easy with us</h2>
           <p className="text-[10px] md:text-[16px] text-gray-500 leading-[15px] md:leading-[24px] md:mb-[30px] lg:mb-[40px]"> Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit</p>
           <div className="hidden md:block">
-            <Link to="/categories">
+            <Link href="/categories">
               <PrimaryButton title="Shop Now" />
             </Link>
           </div>
@@ -25,7 +25,7 @@ const Banner = () => {
             <p className="text-base text-gray-500">Weekend discount up to 35%</p>
           </div>
           <div className="mt-5">
-            <Link to="/categories">
+            <Link href="/categories">
               <PrimaryButton title="Shop Now" />
             </Link>
           </div>
@@ -36,7 +36,7 @@ const Banner = () => {
             <p className="text-base text-gray-500">Weekend discount up to 40%</p>
           </div>
           <div className="mt-5">
-            <Link to="/categories">
+            <Link href="/categories">
               <PrimaryButton title="Shop Now" />
             </Link>
           </div>

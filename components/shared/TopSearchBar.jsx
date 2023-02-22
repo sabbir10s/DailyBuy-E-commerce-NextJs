@@ -1,6 +1,6 @@
+import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import logo from "../../assets/logo/big_logo.png";
 
 const TopSearchBar = () => {
@@ -9,7 +9,7 @@ const TopSearchBar = () => {
     <div className="hidden lg:block border border-gray-100/60">
       <div className="container ">
         <div className="flex justify-between py-5 items-center">
-          <Link to="/">
+          <Link href="/">
             <div className="cursor-pointer w-[200px] h-14">
               <Image src={logo} className="w-full h-full" alt="" />
             </div>

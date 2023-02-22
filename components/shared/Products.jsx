@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { SecondaryButton } from "../theme/Button";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/feature/cartSlice";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Products = ({ product }) => {
   const [wishlist, setWishlist] = useState(false);
@@ -54,12 +54,12 @@ const Products = ({ product }) => {
             </svg>
           )}
         </div>{" "}
-        <Link to={`/product/${product?.id}`}>
+        <Link href={`/product/${product?.id}`}>
           <div className="w-[300px] mx-auto h-[250px]">
             <Image src={product?.main_img_url} className="w-full h-full object-center object-fill" alt="" />
           </div>{" "}
         </Link>
-        <Link to={`/product/${product?.id}`}>
+        <Link href={`/product/${product?.id}`}>
           <div className="space-y-3 lg:mt-1">
             <h3 className="text-black font-semibold text-[12px] md:text-[18px]">{product?.nickname}</h3>
             <div className="flex justify-between items-center">

@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
@@ -8,13 +8,13 @@ const TopBar = () => {
         <div className="flex justify-between items-center">
           <ul className="flex space-x-8">
             <li className="txtHover text-base">
-              <Link to="/offer">
+              <Link href="/offer">
                 <span className="mr-1">🔥</span>
                 <span>Offer</span>
               </Link>
             </li>
             <li className="txtHover text-base">
-              <Link to="/wishlist">
+              <Link href="/wishlist">
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -38,13 +38,13 @@ const TopBar = () => {
 
           <ul className="flex space-x-8">
             <li className="txtHover text-base border-r pr-3">
-              <Link to="/order_track">
+              <Link href="/order_track">
                 <span className="mr-1">🛒</span>
                 <span>Order Tracking</span>
               </Link>
             </li>
             <li className="txtHover text-base border-r pr-3">
-              <Link to="/support">
+              <Link href="/support">
                 <span className="mr-1">💁‍♂️</span>
                 <span>Support Center</span>
               </Link>

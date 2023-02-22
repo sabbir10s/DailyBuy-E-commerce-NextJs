@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../styles/poster.css";
 import { PrimaryButton } from "../theme/Button";
 
@@ -15,7 +15,7 @@ const PosterOffer = () => {
               <p className="text-gray-500 text-[10px] md:text-[12px] lg:text-[14px]">Weekend discount upto 40%</p>
             </div>
             <div className="mt-5">
-              <Link to="/categories">
+              <Link href="/categories">
                 <PrimaryButton title="Shop Now" />
               </Link>
             </div>
@@ -30,7 +30,7 @@ const PosterOffer = () => {
                 <p className="text-gray-500 text-[10px] md:text-[12px] lg:text-[14px]">Weekend discount upto 40%</p>
               </div>
               <div className="mt-5">
-                <Link to="/categories">
+                <Link href="/categories">
                   <PrimaryButton title="Shop Now" />
                 </Link>
               </div>

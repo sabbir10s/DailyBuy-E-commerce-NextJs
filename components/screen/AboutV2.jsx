@@ -7,14 +7,14 @@ import organic from '../../assets/icon/organic.png'
 import bestSuppliers from '../../assets/icon/bestSuppliers.png'
 import bottomBannerImg from '../../assets/about/bottom banner V2.png'
 import bottomMobileBanner from '../../assets/about/bottom banner mobile V2.png'
-
+import Image from "next/image";
 const AboutV2 = () => {
     return (
         <>
          <MenuBar/>
             <div className='mt-[80px] lg:mt-[20px] flex flex-col gap-[30px] md:gap-[40px] lg:gap-[80px]'>
                 <div className='flex flex-col lg:flex-row items-center gap-5 md:gap-7 lg:gap-10 container'>
-                    <img className='w-full lg:w-[450px] rounded-[10px]' src={bannerImg} alt="" />
+                    <Image className='w-full lg:w-[450px] rounded-[10px]' src={bannerImg} alt="" />
                     <div>
                     <h1 className='text-2xl lg:text-4xl text-[#383838] font-bold'>A wonderful serenity has by taken possession, </h1>
                     <p className='text-sm lg:text-lg text-[#626463] mt-[16px] lg:mt-[32px]'> <span className=' font-semibold'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings</span>

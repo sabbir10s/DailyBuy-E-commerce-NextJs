@@ -7,6 +7,7 @@ import food5 from "../../assets/food/Breakfast.png";
 import food6 from "../../assets/food/Biscuit.png";
 import food7 from "../../assets/food/Beverages.png";
 import food8 from "../../assets/food/Grocery.png";
+import Image from "next/image";
 
 const FoodCategory = () => {
   return (
@@ -14,7 +15,7 @@ const FoodCategory = () => {
       <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="rounded-lg pr-2 border border-gray-200/70 flex items-center space-x-4 cursor-pointer group">
           <div className="overflow-hidden">
-            <img className="group-hover:scale-110  transition duration-300" src={food1} alt="" />
+            <Image className="group-hover:scale-110  transition duration-300" src={food1} alt="" />
           </div>
           <div>
             <h3 className="text-2xl font-medium text-black/80 mb-2 group-hover:underline group-hover:text-primary-600 duration-300 transition">
@@ -25,7 +26,7 @@ const FoodCategory = () => {
         </div>{" "}
         <div className="rounded-lg pr-2 border border-gray-200/70 flex items-center space-x-4 cursor-pointer group">
           <div className="overflow-hidden">
-            <img className="group-hover:scale-110  transition duration-300" src={food2} alt="" />
+            <Image className="group-hover:scale-110  transition duration-300" src={food2} alt="" />
           </div>
           <div>
             <h3 className="text-2xl font-medium text-black/80 mb-2 group-hover:underline group-hover:text-primary-600 duration-300 transition">
@@ -36,7 +37,7 @@ const FoodCategory = () => {
         </div>{" "}
         <div className="rounded-lg pr-2 border border-gray-200/70 flex items-center space-x-4 cursor-pointer group">
           <div className="overflow-hidden">
-            <img className="group-hover:scale-110  transition duration-300" src={food3} alt="" />
+            <Image className="group-hover:scale-110  transition duration-300" src={food3} alt="" />
           </div>
           <div>
             <h3 className="text-2xl font-medium text-black/80 mb-2 group-hover:underline group-hover:text-primary-600 duration-300 transition">
@@ -47,7 +48,7 @@ const FoodCategory = () => {
         </div>{" "}
         <div className="rounded-lg pr-2 border border-gray-200/70 flex items-center space-x-4 cursor-pointer group">
           <div className="overflow-hidden">
-            <img className="group-hover:scale-110  transition duration-300" src={food4} alt="" />
+            <Image className="group-hover:scale-110  transition duration-300" src={food4} alt="" />
           </div>
           <div>
             <h3 className="text-2xl font-medium text-black/80 mb-2 group-hover:underline group-hover:text-primary-600 duration-300 transition">
@@ -58,7 +59,7 @@ const FoodCategory = () => {
         </div>{" "}
         <div className="rounded-lg pr-2 border border-gray-200/70 flex items-center space-x-4 cursor-pointer group">
           <div className="overflow-hidden">
-            <img className="group-hover:scale-110  transition duration-300" src={food5} alt="" />
+            <Image className="group-hover:scale-110  transition duration-300" src={food5} alt="" />
           </div>
           <div>
             <h3 className="text-2xl font-medium text-black/80 mb-2 group-hover:underline group-hover:text-primary-600 duration-300 transition">
@@ -69,7 +70,7 @@ const FoodCategory = () => {
         </div>{" "}
         <div className="rounded-lg pr-2 border border-gray-200/70 flex items-center space-x-4 cursor-pointer group">
           <div className="overflow-hidden">
-            <img className="group-hover:scale-110  transition duration-300" src={food6} alt="" />
+            <Image className="group-hover:scale-110  transition duration-300" src={food6} alt="" />
           </div>
           <div>
             <h3 className="text-2xl font-medium text-black/80 mb-2 group-hover:underline group-hover:text-primary-600 duration-300 transition">
@@ -80,7 +81,7 @@ const FoodCategory = () => {
         </div>{" "}
         <div className="rounded-lg pr-2 border border-gray-200/70 flex items-center space-x-4 cursor-pointer group">
           <div className="overflow-hidden">
-            <img className="group-hover:scale-110  transition duration-300" src={food7} alt="" />
+            <Image className="group-hover:scale-110  transition duration-300" src={food7} alt="" />
           </div>
           <div>
             <h3 className="text-2xl font-medium text-black/80 mb-2 group-hover:underline group-hover:text-primary-600 duration-300 transition">
@@ -91,7 +92,7 @@ const FoodCategory = () => {
         </div>{" "}
         <div className="rounded-lg pr-2 border border-gray-200/70 flex items-center space-x-4 cursor-pointer group">
           <div className="overflow-hidden">
-            <img className="group-hover:scale-110  transition duration-300" src={food8} alt="" />
+            <Image className="group-hover:scale-110  transition duration-300" src={food8} alt="" />
           </div>
           <div>
             <h3 className="text-2xl font-medium text-black/80 mb-2 group-hover:underline group-hover:text-primary-600 duration-300 transition">

@@ -4,7 +4,7 @@ import { BlogsData } from "../../../StaticData/BlogsData";
 import linkedIn from "../../../assets/icon/social_primary_color_lin.png";
 import facebook from "../../../assets/icon/social_primary_color_fb.png";
 import twitter from "../../../assets/icon/social_primary_color_tw.png";
-
+import Image from "next/image";
 const BlogDetailsArea = ({ blogId }) => {
   const blogInfo = BlogsData.find((blog) => blog._id === parseInt(blogId));
   const { blog_title, blog_details, banner_img, date, writer, writer_img } = blogInfo;
@@ -21,7 +21,7 @@ const BlogDetailsArea = ({ blogId }) => {
           <h1 className="text-[16px] md:text-[30px] lg:text-[50px] font-bold">{blog_title}</h1>
           <div className="my-[20px] md:my-[30px] lg:my-[48px] flex items-center justify-between">
             <div className="flex items-center gap-[15px] md:gap-[32px]">
-              <img className="w-[50px] md:h-full" src={writer_img} alt="" />
+              <Image className="w-[50px] md:h-full" src={writer_img} alt="" />
               <div>
                 <h3 className="text-sm md:text-lg font-semibold">{writer}</h3>
                 <p className="text-sm md:text-lg text-[#6F757D]">{date}</p>
@@ -30,15 +30,15 @@ const BlogDetailsArea = ({ blogId }) => {
             <div className="flex items-center gap-[12px] md:gap-[25px]">
               <a href="#">
                 {" "}
-                <img className="w-[19px] md:w-[30px] lg:w-full" src={linkedIn} alt="" />
+                <Image className="w-[19px] md:w-[30px] lg:w-full" src={linkedIn} alt="" />
               </a>
               <a href="#">
                 {" "}
-                <img className="w-[19px] md:w-[30px] lg:w-full" src={twitter} alt="" />
+                <Image className="w-[19px] md:w-[30px] lg:w-full" src={twitter} alt="" />
               </a>
               <a href="#">
                 {" "}
-                <img className="w-[19px] md:w-[30px] lg:w-full" src={facebook} alt="" />
+                <Image className="w-[19px] md:w-[30px] lg:w-full" src={facebook} alt="" />
               </a>
             </div>
           </div>

@@ -44,7 +44,7 @@ const ProductCard = ({product}) => {
           </div>
 
           <div className="md:w-[300px] mx-auto">
-            <img
+            <Image
               src={main_img_url}
               className="w-full h-full object-center object-fill"
               alt=""/>

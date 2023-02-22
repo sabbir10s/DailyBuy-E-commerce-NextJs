@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import imgOffer from "../../assets/offer/offer_banner.png";
 import { FiArrowRight } from 'react-icons/fi';
+import Link from "next/link";
 const OfferTimerBanner = () => {
   return (
     <div className="bg-primary-50 pt-6 md:pt-0 mt-8 lg:mt-16">
@@ -36,7 +36,7 @@ const OfferTimerBanner = () => {
               </div>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <Link to="/categories">
+              <Link href="/categories">
                 {" "}
                 <button className="bg-primary-600 hover:bg-primary-700 duration-300 transition hover:shadow-custom hover:scale-105 space-x-2 text-white font-semibold  uppercase ease-in-out flex items-center text-[10px] md:text-[14px] lg:text-[18px] py-[5px] md:py-[18px] lg:py-[28px] px-[12px] md:px-[40px] lg:px-[65px] rounded-[5px] lg:rounded-[10px]">
                   <span>Shop Now</span>
@@ -47,7 +47,7 @@ const OfferTimerBanner = () => {
           </div>
           <div>
             <div className=" h-full lg:h-[700px]">
-              <img className="w-full h-full object-center object-fill" src={imgOffer} alt="" />
+              <Image className="w-full h-full object-center object-fill" src={imgOffer} alt="" />
             </div>
           </div>
         </div>

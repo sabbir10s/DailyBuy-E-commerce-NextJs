@@ -7,14 +7,14 @@ import social2 from "../../assets/icon/social_icon (2).png";
 import social3 from "../../assets/icon/social_icon (3).png";
 import social4 from "../../assets/icon/social_icon (4).png";
 import "../../styles/footer.css";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="border-t border-gray-100 footer">
       <div className=" my-16  container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="space-y-3">
-          <Link to="/">
+          <Link href="/">
             <div className="cursor-pointer w-[200px] h-14">
               <Image src={logo} className="w-full h-full" alt="" />
             </div>

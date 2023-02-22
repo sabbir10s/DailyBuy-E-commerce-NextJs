@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import Link from "next/link";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 const MobileNavbar = () => {
   const [active, setActive] = useState(false);
@@ -12,9 +12,9 @@ const MobileNavbar = () => {
         <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
           <div className="flex items-center">
             <div className=" mx-2">
-              <Link to="/">
+              <Link href="/">
                 {" "}
-                <img className="w-full h-full cursor-pointer" src={logo} alt="" />
+                <Image className="w-full h-full cursor-pointer" src={logo} alt="" />
               </Link>
             </div>
             <div className="w-full relative">
@@ -42,7 +42,7 @@ const MobileNavbar = () => {
             <div className=" flex items-center">
               <div className="flex items-center divide-x divide-gray-100 border-x border-gray-100">
                 <span>
-                  <Link to="/cart" className="block relative border-b-4 border-transparent py-6 px-3 hover:border-red-700">
+                  <Link href="/cart" className="block relative border-b-4 border-transparent py-6 px-3 hover:border-red-700">
                     <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                     </svg>
@@ -54,7 +54,7 @@ const MobileNavbar = () => {
                 </span>
 
                 <span>
-                  <Link to="/account" className="block border-b-4 border-transparent py-6 px-3 hover:border-red-700">
+                  <Link href="/account" className="block border-b-4 border-transparent py-6 px-3 hover:border-red-700">
                     <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path
                         strokeLinecap="round"
@@ -99,40 +99,40 @@ const MobileNavbar = () => {
                 </header>
 
                 <nav className="flex flex-col divide-y divide-gray-200 border-t border-b border-gray-200 text-sm font-medium text-gray-500">
-                  <Link to="/" className="px-6 py-3">
+                  <Link href="/" className="px-6 py-3">
                     {" "}
                     Home{" "}
                   </Link>
-                  <Link to="/about" className="px-6 py-3">
+                  <Link href="/about" className="px-6 py-3">
                     {" "}
                     About us{" "}
                   </Link>
-                  <Link to="/categories" className="flex items-center justify-between px-6 py-3">
+                  <Link href="/categories" className="flex items-center justify-between px-6 py-3">
                     Products
                   </Link>
 
-                  <Link to="/contact" className="px-6 py-3">
+                  <Link href="/contact" className="px-6 py-3">
                     {" "}
                     Contact us{" "}
                   </Link>
-                  <Link to="/support" className="flex items-center justify-between px-6 py-3">
+                  <Link href="/support" className="flex items-center justify-between px-6 py-3">
                     Support Center
                   </Link>
-                  <Link to="/account" className="flex items-center px-6 py-3">
+                  <Link href="/account" className="flex items-center px-6 py-3">
                     Account
                   </Link>
-                  <Link to="/career" className="flex items-center px-6 py-3">
+                  <Link href="/career" className="flex items-center px-6 py-3">
                     Careers
                   </Link>
-                  <Link to="/faq" className="px-6 py-3">
+                  <Link href="/faq" className="px-6 py-3">
                     {" "}
                     FAQs{" "}
                   </Link>
-                  <Link to="/privacy" className="px-6 py-3">
+                  <Link href="/privacy" className="px-6 py-3">
                     {" "}
                     Privacy Policy{" "}
                   </Link>
-                  <Link to="/terms" className="px-6 py-3">
+                  <Link href="/terms" className="px-6 py-3">
                     {" "}
                     Terms Conditions{" "}
                   </Link>

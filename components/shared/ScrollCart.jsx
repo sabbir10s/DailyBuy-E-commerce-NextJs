@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 
 const ScrollCart = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +24,7 @@ const ScrollCart = () => {
 
   return (
     <div className="fixed bottom-5 right-5 hidden lg:block">
-      <Link to="/cart">
+      <Link href="/cart">
         <button
           type="button"
           className={`

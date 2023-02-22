@@ -1,15 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import Link from "next/link";
 import React from "react";
 import { BiCategoryAlt } from "react-icons/bi";
 import { BsReverseLayoutTextWindowReverse } from "react-icons/bs";
-import { Link } from "react-router-dom";
+
+
 const BottomBar = () => {
   return (
     <>
       <div className="border-t border-gray-100 block lg:hidden fixed bottom-0 z-50 bg-white w-full">
         <div className="flex justify-between mx-4">
           <div className="p-3 border-r text-center text-primary-600">
-            <Link to="/">
+            <Link href="/">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,14 +31,14 @@ const BottomBar = () => {
             </Link>
           </div>
           <div className="p-3 border-r text-center text-gray-600">
-            <Link to="/blog">
+            <Link href="/blog">
               {" "}
               <BsReverseLayoutTextWindowReverse className="text-xl inline-block" />
               <p>Blog</p>
             </Link>
           </div>
           <div className="p-3 border-r text-center text-gray-600">
-            <Link to="/wishlist">
+            <Link href="/wishlist">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +58,7 @@ const BottomBar = () => {
             </Link>
           </div>
           <div className="p-3  text-center text-gray-600">
-            <Link to="/categories">
+            <Link href="/categories">
               {" "}
               <BiCategoryAlt className="text-2xl inline-block" />
               <p>Category</p>
