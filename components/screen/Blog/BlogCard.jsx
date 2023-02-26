@@ -1,11 +1,12 @@
+import { useRouter } from 'next/router';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+
 
 const BlogCard = ({blog}) => {
     const {_id,date, blog_title, img, category} = blog
-    const navigate = useNavigate()
+    const router = useRouter();
     const handleBlogDetails = () => {
-        navigate(`/blog/${_id}`)
+        router(`/blog/${_id}`)
     }
     return (
         <>

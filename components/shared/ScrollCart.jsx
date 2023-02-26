@@ -50,7 +50,7 @@ const ScrollCart = () => {
               </svg>
             </span>
             <span className="w-5 h-5 text-sm inline-block rounded-[50%] bg-secondary-600 text-white text-center font-semibold absolute top-2  right-1">
-              {cartItems.length}
+              {cartItems?.length}
             </span>
           </div>
         </button>

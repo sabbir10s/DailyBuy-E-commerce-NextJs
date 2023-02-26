@@ -1,7 +1,8 @@
 import React from "react";
-import imgOffer from "../../assets/offer/offer_banner.png";
+import img_offer from '../../assets/offer/offer_banner.png'
 import { FiArrowRight } from 'react-icons/fi';
 import Link from "next/link";
+import Image from "next/image";
 const OfferTimerBanner = () => {
   return (
     <div className="bg-primary-50 pt-6 md:pt-0 mt-8 lg:mt-16">
@@ -47,7 +48,7 @@ const OfferTimerBanner = () => {
           </div>
           <div>
             <div className=" h-full lg:h-[700px]">
-              <Image className="w-full h-full object-center object-fill" src={imgOffer} alt="" />
+              <Image src={img_offer} className="w-full h-full object-center object-fill"  alt="f" />
             </div>
           </div>
         </div>

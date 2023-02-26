@@ -1,10 +1,12 @@
 import React, {useState} from "react";
+import Image from "next/image";
 import {SecondaryButton} from "../theme/Button";
 import {useDispatch} from "react-redux";
 import {addToCart} from "../../redux/feature/cartSlice";
-import {useNavigate} from "react-router-dom";
 import ReactStars from "react-stars";
 import {AiFillHeart, AiOutlineHeart} from "react-icons/ai";
+import {useRouter} from "next/router";
+import StarRatings from "react-star-ratings";
 
 const ProductCard = ({product}) => {
   const [wishlist,
@@ -23,9 +25,9 @@ const ProductCard = ({product}) => {
     del_price,
     rating
   } = product
-  const navigate = useNavigate()
+  const router = useRouter();
   const handleProductDetails = () => {
-    navigate(`/product/${_id}`)
+    router.push(`/product/${_id}`)
   }
   return (
     <div
@@ -43,12 +45,14 @@ const ProductCard = ({product}) => {
             <p>{discount}% OFF</p>
           </div>
 
-          <div className="md:w-[300px] mx-auto">
-            <Image
-              src={main_img_url}
-              className="w-full h-full object-center object-fill"
-              alt=""/>
-          </div>
+          <div className="md:w-[300px] mx-auto"></div>
+          <Image
+            className="w-full h-full object-center object-fill"
+            src={main_img_url}
+            width={200}
+            height={200}
+            alt=""/>
+
           <div className="space-y-3 lg:mt-1">
             <h3 className="text-black font-semibold text-[12px] md:text-[18px]">{nickname}</h3>
             <div className="flex justify-between items-center">
@@ -59,8 +63,18 @@ const ProductCard = ({product}) => {
                 </span>
               </p>
               <div className="flex gap-1 items-center">
-                <ReactStars className="block md:hidden" count={5} size={8} value={rating} edit={false}></ReactStars>
-                <ReactStars className="hidden md:block" count={5} size={20} value={rating} edit={false}></ReactStars>
+                <ReactStars
+                  className="block md:hidden"
+                  count={5}
+                  size={8}
+                  value={rating}
+                  edit={false}></ReactStars>
+                <ReactStars
+                  className="hidden md:block"
+                  count={5}
+                  size={20}
+                  value={rating}
+                  edit={false}></ReactStars>
                 <p className="text-gray-500 text-[12px] md:text-[18px]">({rating})</p>
               </div>
             </div>

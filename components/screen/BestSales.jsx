@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import ProductCard from "../shared/ProductCard";
 import { FiArrowRight, FiChevronDown } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import ProductCard from "../shared/ProductCard";
 
 const BestSales = () => {
   const [productData, setProductData] = useState([]);
