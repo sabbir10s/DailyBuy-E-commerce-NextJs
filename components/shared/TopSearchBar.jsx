@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
+
 import logo from "../../assets/logo/big_logo.png";
 
 const TopSearchBar = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {FaStar} from 'react-icons/fa';
-import '../../../styles/AddReview.css'
+import styles from '../../../styles/addReview.module.css'
 const AddReview = () => {
     const [starRating,
         setStarRating] = useState(null);
@@ -9,7 +9,7 @@ const AddReview = () => {
   return (
     <div>
 
-      <form className='flex flex-col gap-[20px] mt-[32px]' action="">
+      <form className={`flex flex-col gap-[20px] mt-[32px] review ${styles.review}`} action="">
         <div className='flex flex-col lg:flex-row items-center gap-[32px]'>
           <input
             className='border-[1px] border-[#919EAB]/30 focus:outline-primary-600 rounded-[8px] py-[16px] px-[14px] w-full'
