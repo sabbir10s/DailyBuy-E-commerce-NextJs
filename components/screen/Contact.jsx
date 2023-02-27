@@ -1,14 +1,14 @@
 import React from 'react';
 import MenuBar from '../shared/MenuBar';
-import map from '../../assets/contact/map.png'
-import '../../styles/contact.css'
-
+import map from '../../assets/contact/map.png';
+import styles from '../../styles/contact.module.css'
+import Image from 'next/image';
 const Contact = () => {
     return (
         <>
             <MenuBar/>
             <div className='mb-8 mt-[80px] lg:mt-[52px] flex flex-col gap-[25px] md:gap-[40px] lg:gap-[56px]'>
-               <div className='map w-full'>
+               <div className={`map ${styles.map} w-full`}>
                   <Image className='w-full' src={map} alt="" />
                </div>
 
