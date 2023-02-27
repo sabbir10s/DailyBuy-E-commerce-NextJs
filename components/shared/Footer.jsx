@@ -6,12 +6,12 @@ import social1 from "../../assets/icon/social_icon (1).png";
 import social2 from "../../assets/icon/social_icon (2).png";
 import social3 from "../../assets/icon/social_icon (3).png";
 import social4 from "../../assets/icon/social_icon (4).png";
-import "../../styles/footer.css";
+import styles from"../../styles/footer.module.css";
 import Link from "next/link";
-
+import Image from "next/image";
 const Footer = () => {
   return (
-    <div className="border-t border-gray-100 footer">
+    <div className={`border-t border-gray-100 footer ${styles.footer}`}>
       <div className=" my-16  container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="space-y-3">
           <Link href="/">
