@@ -1,12 +1,11 @@
 import { useRouter } from 'next/router';
 import React from 'react';
-
-
+import Image from "next/image";
 const BlogCard = ({blog}) => {
     const {_id,date, blog_title, img, category} = blog
     const router = useRouter();
     const handleBlogDetails = () => {
-        router(`/blog/${_id}`)
+        router.push(`/blog/${_id}`)
     }
     return (
         <>

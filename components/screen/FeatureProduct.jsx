@@ -6,7 +6,6 @@ import ProductCard from "../shared/ProductCard";
 
 const FeatureProduct = () => {
   const [productData, setProductData] = useState([]);
-  // console.log(data);
   const fetchData = () => {
     axios
       .get("products.json")
@@ -21,7 +20,6 @@ const FeatureProduct = () => {
     fetchData();
   }, []);
   
-  console.log(productData);
   return (
     <div className="container">
       <h1>hello</h1>

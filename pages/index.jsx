@@ -7,7 +7,7 @@ import BestSales from "@/components/screen/BestSales";
 import OfferTimerBanner from "@/components/screen/OfferTimerBanner";
 import ProcessingSteps from "@/components/screen/ProcessingSteps";
 import ScrollBottom from "@/components/shared/ScrollBottom";
-import ScrollCart from "@/components/shared/ScrollCart";
+// import ScrollCart from "@/components/shared/ScrollCart";
 import Head from "next/head";
 
 
@@ -30,7 +30,7 @@ export default function Home() {
         <FoodCategory />
         <ProcessingSteps />
         <ScrollBottom />
-        <ScrollCart />
+        {/* <ScrollCart /> */}
       </main>
     </>
   );

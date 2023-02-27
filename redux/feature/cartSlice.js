@@ -1,11 +1,9 @@
 import { toast } from "react-toastify";
 const { createSlice } = require("@reduxjs/toolkit");
 
-const data = typeof window !== 'undefined' ? localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) : [] : null
-const data2 = typeof window !== 'undefined' ? localStorage.getItem("cartQuantity") ? JSON.parse(localStorage.getItem("cartQuantity")) : 0 : null
 const initialState = {
-  cartItems: data,
-  cartTotalQuantity: data2,
+  cartItems: typeof window !== "undefined" ? window.localStorage.getItem("cartItems") : false ? JSON.parse(localStorage.getItem("cartItems")) : [],
+  cartTotalQuantity: typeof window !== "undefined" ? window.localStorage.getItem("cartQuantity") : false ? JSON.parse(localStorage.getItem("cartQuantity")) : 0,
   cartTotalAmount: 0,
 };
 const cartSlice = createSlice({
