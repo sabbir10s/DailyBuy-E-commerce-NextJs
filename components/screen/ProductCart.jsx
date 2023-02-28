@@ -2,7 +2,7 @@ import React from "react";
 import MenuBar from "../shared/MenuBar";
 import ProcessingSteps from "./ProcessingSteps";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, decreaseCart, removeFromCart } from "../../redux/feature/cartSlice";
+import { addToCart, decreaseCart, removeFromCart } from "@/redux/feature/cartSlice";
 import Link from "next/link";
 
 const ProductCart = () => {
