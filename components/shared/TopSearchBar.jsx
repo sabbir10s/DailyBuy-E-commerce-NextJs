@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
-
 import logo from "../../assets/logo/big_logo.png";
+import Image from "next/image";
 
 const TopSearchBar = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -35,7 +35,7 @@ const TopSearchBar = () => {
             </button>
           </div>
           <div className="space-x-8 flex items-center">
-            <Link className="txtHover text-base" to="/cart">
+            <Link className="txtHover text-base" href="/cart">
               <div className="bg-secondary-50 inline-block w-14 h-14 rounded-[50%] relative">
                 <span>
                   <svg
@@ -58,7 +58,7 @@ const TopSearchBar = () => {
                 </span>
               </div>
             </Link>{" "}
-            <Link className="txtHover text-base" to="/signIn">
+            <Link className="txtHover text-base" href="/signIn">
               <div className="flex items-center space-x-2">
                 <div className="bg-[#F8F8F8]  w-12 h-12 rounded-[50%] relative">
                   <span>

@@ -22,7 +22,6 @@ const FeatureProduct = () => {
   
   return (
     <div className="container">
-      <h1>hello</h1>
       <div
         className="flex justify-between items-center mt-[25px] md:mt-[35px] lg:mt-[50px] mb-[16px] lg:mb-[29px]">
         <h2

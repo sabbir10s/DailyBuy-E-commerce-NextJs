@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import logo from "../../assets/logo/logo.png";
+import Image from "next/image";
 const MobileNavbar = () => {
   const [active, setActive] = useState(false);
   const { cartItems } = useSelector((state) => state.cart);
