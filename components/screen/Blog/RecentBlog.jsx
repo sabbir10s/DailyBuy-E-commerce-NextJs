@@ -2,8 +2,8 @@ import React from 'react';
 import { BlogsData } from '../../../StaticData/BlogsData';
 import BlogCard from './BlogCard';
 
-const RecentBlog = ({ blogId} ) => {
-    const recentBlog = BlogsData.filter(blog=>blog._id !==blogId).slice(0,3)
+const RecentBlog = ({ bid} ) => {
+    const recentBlog = BlogsData.filter(blog=>blog._id !==bid).slice(0,3)
     return (
         <div className='container'>
             <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-[48px] lg:mt-[80px] mb-[48px]'>Related posts</h2>
