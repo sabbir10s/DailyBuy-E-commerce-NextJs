@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import MenuBar from '../shared/MenuBar';
-import map from '../../assets/contact/map.png';
+// import map from '../../assets/contact/map.png';
 import styles from '../../styles/contact.module.css'
-import Image from 'next/image';
+// import Image from 'next/image';
+import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 const Contact = () => {
+    const {isLoading} = useLoadScript({
+        googleMapsApiKey:process.env.MAPS_API_KEY,
+    });
+    if(isLoading){
+        return <>Loading</>
+    }
+
+    const center = useMemo(()=>({lat:44, lng:-80}), [])
     return (
         <>
             <MenuBar/>
             <div className='mb-8 mt-[80px] lg:mt-[52px] flex flex-col gap-[25px] md:gap-[40px] lg:gap-[56px]'>
-               <div className={`map ${styles.map} w-full`}>
-                  <Image className='w-full' src={map} alt="" />
+               <div>
+                  {/* <Image className='w-full' src={map} alt="" /> */}
+                  <GoogleMap zoom={10} center={center} mapContainerClassName={`map_container ${styles.map_container}`}>
+                    <Marker position={center}></Marker>
+                  </GoogleMap>
                </div>
 
                <div className='container grid lg:grid-cols-3 items-end'>
