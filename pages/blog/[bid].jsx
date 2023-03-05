@@ -10,6 +10,7 @@ import axios from "axios";
 import RecentBlog from "@/components/screen/Blog/RecentBlog";
 import ProcessingSteps from "@/components/screen/ProcessingSteps";
 import ThemeSuspense from "@/components/theme/ThemeSuspense";
+import { Helmet } from "react-helmet";
 
 const BlogDetailsArea = () => {
 
@@ -41,6 +42,10 @@ const BlogDetailsArea = () => {
     <>
       
       <div className="mt-[80px] lg:mt-[20px]">
+      <Helmet>
+        <title>DailyBuy - Blog Details</title>
+        <meta charSet="utf-8" name="description" content="DailyBuy Blog Details Page" />
+      </Helmet>
         <div
           className="h-[200px] md:h-[300px] lg:h-[400px] bg-cover bg-no-repeat"
           style={{
