@@ -11,7 +11,7 @@ import biscuits from '../../assets/icon/category/Biscuits & Snacks.png'
 import beverages from '../../assets/icon/category/Beverages.png'
 import grocery from '../../assets/icon/category/Grocery.png'
 import Link from "next/link";
-
+import Image from "next/image";
 const Hero = () => {
   const [active,
     setActive] = useState(true);
@@ -54,56 +54,58 @@ const Hero = () => {
           <div
             className="shadow-custom_secondary hidden lg:block rounded-b-[10px] w-[320px]">
             <ul>
-              <li className="py-3 border-b border-gray-100 txtHover text-gray-600">
+              <li className="p-3 border-b border-gray-1er text-gray-6 hover:text-primary-600">
                 <Link className="flex items-center gap-[8px]" href='/categories'>
-                  <img className="w-[25px]" src={fruits} alt=""/>
+                  <Image className="w-[25px]" src={fruits} alt=""/>
                   <span>Fruits & Vegetable</span>
                 </Link>
               </li>
               <li
-                className="py-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
+                className="p-3 border-b border-gray-100 text-gray-600 hover:text-primary-600 flex items-center gap-[8px]">
                 <Link className="flex items-center gap-[8px]" href='/categories'>
-                  <img className="w-[25px]" src={meats} alt=""/>
+                  <Image className="w-[25px]" src={meats} alt=""/>
                   <span>Meats & Fish</span>
                 </Link>
               </li>
               <li
-                className="py-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
+                className="p-3 border-b border-gray-100 text-gray-600 hover:text-primary-600 flex items-center gap-[8px]">
                 <Link className="flex items-center gap-[8px]" href='/categories'>
-                  <img className="w-[25px]" src={breads} alt=""/>
+                  <Image className="w-[25px]" src={breads} alt=""/>
                   <span>Breads & Bakery</span>
                 </Link>
               </li>
               <li
-                className="py-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
-                <img className="w-[25px]" src={frozen} alt=""/>
+                className="p-3 border-b border-gray-100 text-gray-600 hover:text-primary-600 flex items-center gap-[8px]">
+                <Link className="flex items-center gap-[8px]" href='/categories'>
+                <Image className="w-[25px]" src={frozen} alt=""/>
                 <span>Frozen Foods</span>
+                </Link>
               </li>
               <li
-                className="py-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
+                className="p-3 border-b border-gray-100 text-gray-600 hover:text-primary-600 flex items-center gap-[8px]">
                 <Link className="flex items-center gap-[8px]" href='/categories'>
-                  <img className="w-[25px]" src={breakfast} alt=""/>
+                  <Image className="w-[25px]" src={breakfast} alt=""/>
                   <span>Breakfast & Dairy</span>
                 </Link>
               </li>
               <li
-                className="py-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
+                className="p-3 border-b border-gray-100 text-gray-600 hover:text-primary-600 flex items-center gap-[8px]">
                 <Link className="flex items-center gap-[8px]" href='/categories'>
-                  <img className="w-[25px]" src={biscuits} alt=""/>
+                  <Image className="w-[25px]" src={biscuits} alt=""/>
                   <span>Biscuits & Snacks</span>
                 </Link>
               </li>
               <li
-                className="py-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
+                className="p-3 border-b border-gray-100 text-gray-600 hover:text-primary-600 flex items-center gap-[8px]">
                 <Link className="flex items-center gap-[8px]" href='/categories'>
-                  <img className="w-[25px]" src={beverages} alt=""/>
+                  <Image className="w-[25px]" src={beverages} alt=""/>
                   <span>Beverages</span>
                 </Link>
               </li>
               <li
-                className="py-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
+                className="p-3 border-b border-gray-100 text-gray-600 hover:text-primary-600 flex items-center gap-[8px]">
                 <Link className="flex items-center gap-[8px]" href='/categories'>
-                  <img className="w-[25px]" src={grocery} alt=""/>
+                  <Image className="w-[25px]" src={grocery} alt=""/>
                   <span>Grocery</span>
                 </Link>
               </li>
