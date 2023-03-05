@@ -10,7 +10,7 @@ const BlogCard = ({blog}) => {
     return (
         <>
             <div onClick={()=>handleBlogDetails(_id)} className='border-[1px] border-[#E9E9E9] rounded-[12px] max-w-[400px] cursor-pointer'>
-                <Image className='rounded-t-[12px]' src={img} alt="" />
+                <Image className='rounded-t-[12px]' width={400} height={400} src={img} alt="" />
                 <div className='p-[21px]'>
                     <h1 className='font-bold text-[16px] md:text-[20px] lg:text-[24px] text-left'>{blog_title}</h1>
                     <div className='my-[12px] h-[1px] bg-[#E9E9E9]'></div>

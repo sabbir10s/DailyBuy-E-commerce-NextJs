@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
 import BreadCamp from "../../components/theme/BreadCamp";
-import bigImg from "../../assets/product-details/cup/big_product1.png"
+import bigImg from '../../assets/products/product (1).png'
 import SmallProductImg from "../../components/screen/SmallProductImg";
 import ProcessingSteps from "../../components/screen/ProcessingSteps";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FiArrowRight } from "react-icons/fi";
 import { ImWarning } from "react-icons/im";
 import Quantity from "../../components/shared/Quantity";
-import ReviewCard from "../../components/screen/Review/ReviewCard";
 import AddReview from "../../components/screen/Review/AddReview";
 import ProductCard from "../../components/shared/ProductCard";
 import axios from "axios";
 import ReactStars from "react-stars";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import MenuBar from "@/components/shared/MenuBar";
 import Image from "next/image";
+import { Helmet } from "react-helmet";
+import Reviews from "@/components/screen/Review/Review";
+import ThemeSuspense from "@/components/theme/ThemeSuspense";
 
 const ProductDetails = () => {
   const [productData, setProductData] = useState([]);
@@ -37,26 +38,33 @@ const ProductDetails = () => {
 
   const productInfo = productData.find(product=>product._id === parseInt(pid))
 
-  const [activeImg, setActiveImg] = useState(bigImg);
+  const [activeImg,
+    setActiveImg] = useState(bigImg);
   const [wishlist, setWishlist] = useState(false);
   const [active, setActive] = useState("desc");
 
     if(!productInfo){
-      return <>Loading</>
+      return <ThemeSuspense/>
     }
-    const {product_name, price, rating,review,discount,stock,desc,details_benefit,full_description, packaging_and_delivery,other_things_of_product} = productInfo
+    const {product_name,small_img_url, price, rating,review,discount,stock,desc,details_benefit,full_description, packaging_and_delivery,other_things_of_product} = productInfo
   return (
     <div className="mt-20 lg:mt-0">
-      <MenuBar />
       <div className="container mt-0 md:mt-[30px]">
+      <Helmet>
+        <title>DailyBuy - Product Details</title>
+        <meta
+          charSet="utf-8"
+          name="description"
+          content="DailyBuy Product Details Page"/>
+      </Helmet>
         <BreadCamp />
         <div className="md:mt-[32px] grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
           <div className="space-y-4 cursor-pointer col-span-1">
             <div className=" w-full h-full lg:h-[400px]">
-              <Image className="w-full h-full object-center object-fill rounded-[24px]" src={activeImg} alt="" />
+              <Image className="w-full h-full object-center object-fill rounded-[24px]" width={100} height={100} src={activeImg} alt="" />
             </div>
             <div className="hidden lg:block">
-              <SmallProductImg setActiveImg={setActiveImg} />
+              <SmallProductImg small_img_url={small_img_url} setActiveImg={setActiveImg} />
             </div>
           </div>
           <div className="col-span-1 lg:col-span-2">
@@ -211,28 +219,16 @@ const ProductDetails = () => {
                 </div>
               </div>
             )}
-            {active === "review" && (
+           {active === "review" && (
               <div>
-                <h3 className="text-2xl font-semibold hidden lg:block">Review (3)</h3>
-                <div className="hidden lg:block">
-                  {Array.from({ length: 3 }).map((_, idx) => (
-                    <ReviewCard key={idx} />
-                  ))}
-                </div>
-                <div className="block lg:hidden">
-                  {Array.from({ length: 2 }).map((_, idx) => (
-                    <ReviewCard key={idx} />
-                  ))}
+                <Reviews/> 
+                {/* Add Review */}
+                <div className="hidden lg:block mt-[40px]">
+                  <h2 className=" pt-[24px] text-[24px] font-semibold border-t border-#DFE3E">Add Review</h2>
+                  <AddReview/>
                 </div>
               </div>
             )}
-          </div>
-
-          {/* Add Review */}
-
-          <div className="hidden lg:block mt-[40px]">
-            <h2 className=" pt-[24px] text-[24px] font-semibold border-t border-#DFE3E">Add Review</h2>
-            <AddReview />
           </div>
         </div>
         {/*==================================

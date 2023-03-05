@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import categoryImg from '../../../assets/category/category-banner.png'
+
 const CategoriesBanner = () => {
   return (
     <div className="bg-primary-50 hidden lg:grid grid-cols-2 items-center rounded-lg">
       <div >
-        <Image className="w-[450px]" src={categoryImg} alt="" />
+        <Image className="w-[450px]" width={200} height={200} src='https://i.ibb.co/wyTZRdn/category-banner.png' alt="" />
       </div>
       <div>
         <h2 className="text-6xl text-primary-700 font-bold">20% Off Fresh</h2>

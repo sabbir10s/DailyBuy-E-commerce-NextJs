@@ -7,21 +7,21 @@
   animation: ringA 2s linear infinite;
 }
 
-.pl__ring--a {
+.pl__ring__a {
   stroke: #f42f25;
 }
 
-.pl__ring--b {
+.pl__ring__b {
   animation-name: ringB;
   stroke: #f49725;
 }
 
-.pl__ring--c {
+.pl__ring__c {
   animation-name: ringC;
   stroke: #255ff4;
 }
 
-.pl__ring--d {
+.pl__ring__d {
   animation-name: ringD;
   stroke: #f42582;
 }

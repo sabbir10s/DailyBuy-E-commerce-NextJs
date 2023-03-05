@@ -1,12 +1,12 @@
 import React from "react";
-import "../../styles/loading.css";
+import styles from "../../styles/loading.module.css";
 
 const ThemeSuspense = () => {
   return (
     <div className="w-full h-screen flex justify-center items-center">
-      <svg className="pl" width="240" height="240" viewBox="0 0 240 240">
+      <svg className={`pl ${styles.pl}`} width="240" height="240" viewBox="0 0 240 240">
         <circle
-          className="pl__ring pl__ring--a"
+          className={`pl__ring pl__ring__a ${styles.pl__ring} ${styles.pl__ring__a}`}
           cx="120"
           cy="120"
           r="105"
@@ -18,7 +18,7 @@ const ThemeSuspense = () => {
           strokeLinecap="round"
         ></circle>
         <circle
-          className="pl__ring pl__ring--b"
+          className={`pl__ring pl__ring__b ${styles.pl__ring} ${styles.pl__ring__b}`}
           cx="120"
           cy="120"
           r="35"
@@ -30,7 +30,7 @@ const ThemeSuspense = () => {
           strokeLinecap="round"
         ></circle>
         <circle
-          className="pl__ring pl__ring--c"
+           className={`pl__ring pl__ring__c ${styles.pl__ring} ${styles.pl__ring__c}`}
           cx="85"
           cy="120"
           r="70"
@@ -41,7 +41,7 @@ const ThemeSuspense = () => {
           strokeLinecap="round"
         ></circle>
         <circle
-          className="pl__ring pl__ring--d"
+          className={`pl__ring pl__ring__d ${styles.pl__ring} ${styles.pl__ring__d}`}
           cx="155"
           cy="120"
           r="70"
