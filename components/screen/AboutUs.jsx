@@ -3,13 +3,11 @@ import img_one from '../../assets/about/about_img_one.png'
 import img_two from '../../assets/about/about_img_two.png'
 import img_three from '../../assets/about/about_img_three.png'
 import img_four from '../../assets/about/about_img_four.png'
-import MenuBar from '../shared/MenuBar';
 import ProcessingSteps from './ProcessingSteps';
 import Image from "next/image";
 const AboutUs = () => {
     return (
         <>
-        <MenuBar/>
         <div className='container mt-[80px] lg:mt-[20px] mb-[20px] lg:mb-[20px]'>
            <div className='flex flex-col lg:flex-row items-center gap-[48px] '>
                 <Image className='w-full lg:w-[450px] rounded-[10px]' src={img_one} alt="" />

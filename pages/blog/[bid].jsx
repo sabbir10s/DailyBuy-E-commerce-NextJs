@@ -6,7 +6,7 @@ import twitter from "../../assets/icon/social_primary_color_tw.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import axios from "axios";
-import MenuBar from "@/components/shared/MenuBar";
+
 import RecentBlog from "@/components/screen/Blog/RecentBlog";
 import ProcessingSteps from "@/components/screen/ProcessingSteps";
 
@@ -38,7 +38,7 @@ const BlogDetailsArea = () => {
   const { blog_title, blog_details, banner_img, date, writer, writer_img } = blogInfo;
   return (
     <>
-      <MenuBar />
+      
       <div className="mt-[80px] lg:mt-[20px]">
         <div
           className="h-[200px] md:h-[300px] lg:h-[400px] bg-cover bg-no-repeat"

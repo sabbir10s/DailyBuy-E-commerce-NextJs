@@ -14,7 +14,7 @@ import axios from "axios";
 import ReactStars from "react-stars";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import MenuBar from "@/components/shared/MenuBar";
+
 import Image from "next/image";
 
 const ProductDetails = () => {
@@ -47,7 +47,7 @@ const ProductDetails = () => {
     const {product_name, price, rating,review,discount,stock,desc,details_benefit,full_description, packaging_and_delivery,other_things_of_product} = productInfo
   return (
     <div className="mt-20 lg:mt-0">
-      <MenuBar />
+      
       <div className="container mt-0 md:mt-[30px]">
         <BreadCamp />
         <div className="md:mt-[32px] grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
