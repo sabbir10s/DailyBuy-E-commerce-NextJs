@@ -9,6 +9,7 @@ import axios from "axios";
 
 import RecentBlog from "@/components/screen/Blog/RecentBlog";
 import ProcessingSteps from "@/components/screen/ProcessingSteps";
+import ThemeSuspense from "@/components/theme/ThemeSuspense";
 
 const BlogDetailsArea = () => {
 
@@ -32,7 +33,7 @@ const BlogDetailsArea = () => {
 
   const blogInfo = Blogs.find((blog) => blog._id === parseInt(bid));
   if(!blogInfo){
-    return <>Loading</>
+    return <ThemeSuspense/>
   }
   console.log(blogInfo);
   const { blog_title, blog_details, banner_img, date, writer, writer_img } = blogInfo;
