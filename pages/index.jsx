@@ -11,7 +11,6 @@ import ScrollBottom from "@/components/shared/ScrollBottom";
 import Head from "next/head";
 import BottomBar from "@/components/shared/BottomBar";
 
-
 export default function Home() {
   return (
     <>
@@ -31,7 +30,7 @@ export default function Home() {
         <FoodCategory />
         <ProcessingSteps />
         <ScrollBottom />
-        <BottomBar/>
+        <BottomBar />
         {/* <ScrollCart /> */}
       </main>
     </>
