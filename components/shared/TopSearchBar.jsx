@@ -6,6 +6,7 @@ import Image from "next/image";
 
 const TopSearchBar = () => {
   const { cartItems } = useSelector((state) => state.cart);
+  console.log(cartItems);
   return (
     <div className="hidden lg:block border border-gray-100/60">
       <div className="container ">
