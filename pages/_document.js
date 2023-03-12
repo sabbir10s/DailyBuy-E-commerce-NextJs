@@ -7,7 +7,6 @@ import { Head, Html, Main, NextScript } from "next/document";
 import { Provider } from "react-redux";
 import { useRouter } from "next/router";
 
-
 export default function Document() {
   // const router = useRouter()
   // console.log(router.pathname);
