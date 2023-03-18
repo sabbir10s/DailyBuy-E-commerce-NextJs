@@ -1,18 +1,20 @@
-import React from "react";
-import FoodCategory from "@/components/screen/FoodCategory";
-import Hero from "@/components/screen/Hero";
-import FeatureProduct from "@/components/screen/FeatureProduct";
-import PosterOffer from "@/components/screen/PosterOffer";
-import BestSales from "@/components/screen/BestSales";
-import OfferTimerBanner from "@/components/screen/OfferTimerBanner";
-import ProcessingSteps from "@/components/screen/ProcessingSteps";
-import ScrollBottom from "@/components/shared/ScrollBottom";
-// import ScrollCart from "@/components/shared/ScrollCart";
 import Head from "next/head";
-import BottomBar from "@/components/shared/BottomBar";
+import React, { useEffect } from "react";
+import BestSales from "../components/screen/BestSales";
+import FeatureProduct from "../components/screen/FeatureProduct";
+import FoodCategoryV2 from "../components/screen/FoodCategoryV2";
+// import FoodCategory from "../components/screen/FoodCategory";
+import Hero from "../components/screen/Hero";
+import OfferTimerBanner from "../components/screen/OfferTimerBanner";
+import PosterOffer from "../components/screen/PosterOffer";
+import ProcessingSteps from "../components/screen/ProcessingSteps";
+import ScrollBottom from "../components/shared/ScrollBottom";
+import ScrollCart from "../components/shared/ScrollCart";
 
-
-export default function Home() {
+const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Head>
@@ -23,17 +25,19 @@ export default function Home() {
       </Head>
 
       <main>
-        <Hero />
-        <FeatureProduct />
-        <PosterOffer />
-        <BestSales />
-        <OfferTimerBanner />
-        <FoodCategory />
-        <ProcessingSteps />
-        <ScrollBottom />
-        <BottomBar/>
-        {/* <ScrollCart /> */}
+      <Hero />
+      <FeatureProduct />
+      <PosterOffer />
+      <BestSales />
+      <OfferTimerBanner />
+      {/* <FoodCategory /> */}
+      <FoodCategoryV2/>
+      <ProcessingSteps />
+      <ScrollBottom />
+      <ScrollCart />
       </main>
     </>
   );
-}
+};
+
+export default Home;
