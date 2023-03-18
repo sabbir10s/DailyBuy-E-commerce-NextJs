@@ -1,5 +1,5 @@
-/* Customize the label (the checkbox_btn) */
-.checkbox_btn {
+/* Customize the label (the checkbox-btn) */
+.checkbox-btn {
   display: block;
   position: relative;
   padding-left: 30px;
@@ -12,7 +12,7 @@
 }
 
 /* Hide the browser's default checkbox */
-.checkbox_btn input {
+.checkbox-btn input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -20,7 +20,7 @@
   width: 0;
 }
 
-.checkbox_btn label {
+.checkbox-btn label {
   cursor: pointer;
   font-size: 14px;
 }
@@ -34,7 +34,7 @@
   border-radius: 5px;
   border: 2px solid #00a884;
 }
-.checkbox_btn input:checked ~ .checkmark {
+.checkbox-btn input:checked ~ .checkmark {
   background-color: #00a884;
 }
 
@@ -48,7 +48,7 @@
   top: 0.5px;
   width: 3.5px;
   height: 10px;
-  border: 2.5px solid #00a884;
+  border: 2.5px solid white;
   border-width: 0 2.5px 2.5px 0;
   transition: 0.3s ease-in-out;
   -webkit-transform: rotate(45deg);
@@ -57,7 +57,7 @@
 }
 
 /* Show the check mark when checked */
-.checkbox_btn input:checked ~ .checkmark:after {
+.checkbox-btn input:checked ~ .checkmark:after {
   visibility: visible;
   opacity: 1;
 }
