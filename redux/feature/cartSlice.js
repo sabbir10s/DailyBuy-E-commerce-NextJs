@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import localStorage from "local-storage";
 
 const initialState = {
-  cartItems: localStorage.get("cartItems") ? JSON.parse(localStorage.get("cartItems")) : [],
-  cartTotalQuantity: localStorage.get("cartQuantity") ? JSON.parse(localStorage.get("cartQuantity")) : 0,
+  cartItems: localStorage.get("cartItems") ? localStorage.get("cartItems") : [],
+  cartTotalQuantity: localStorage.get("cartQuantity") ? localStorage.get("cartQuantity") : 0,
   cartTotalAmount: 0,
 };
 const cartSlice = createSlice({
@@ -26,8 +26,8 @@ const cartSlice = createSlice({
       state.cartTotalQuantity += 1;
 
       //   save to local storage
-      localStorage.set("cartItems", JSON.stringify(state.cartItems));
-      localStorage.set("cartQuantity", JSON.stringify(state.cartTotalQuantity));
+      localStorage.set("cartItems", state.cartItems);
+      localStorage.set("cartQuantity", state.cartTotalQuantity);
     },
 
     decreaseCart: (state, action) => {

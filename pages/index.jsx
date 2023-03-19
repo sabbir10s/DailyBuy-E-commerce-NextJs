@@ -10,6 +10,7 @@ import ScrollBottom from "@/components/shared/ScrollBottom";
 // import ScrollCart from "@/components/shared/ScrollCart";
 import Head from "next/head";
 import BottomBar from "@/components/shared/BottomBar";
+import ScrollCart from "@/components/shared/ScrollCart";
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
         <ProcessingSteps />
         <ScrollBottom />
         <BottomBar />
-        {/* <ScrollCart /> */}
+        <ScrollCart />
       </main>
     </>
   );
