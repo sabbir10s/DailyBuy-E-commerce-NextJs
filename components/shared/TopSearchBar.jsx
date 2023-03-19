@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { useSelector } from "react-redux";
 import logo from "../../assets/logo/big_logo.png";
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 const TopSearchBar = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -35,7 +35,7 @@ const TopSearchBar = () => {
             </button>
           </div>
           <div className="space-x-8 flex items-center">
-            <Link className="txtHover text-base" href="/cart">
+            {/*   <Link className="txtHover text-base" href="/cart">
               <div className="bg-secondary-50 inline-block w-14 h-14 rounded-[50%] relative">
                 <span>
                   <svg
@@ -54,10 +54,10 @@ const TopSearchBar = () => {
                   </svg>
                 </span>
                 <span className="w-5 h-5 text-sm inline-block rounded-[50%] bg-secondary-600 text-white text-center font-semibold absolute top-2  right-1">
-                  {cartItems.length}
+                  {cartItems?.length}
                 </span>
               </div>
-            </Link>{" "}
+            </Link>{" "} */}
             <Link className="txtHover text-base" href="/signIn">
               <div className="flex items-center space-x-2">
                 <div className="bg-[#F8F8F8]  w-12 h-12 rounded-[50%] relative">
@@ -84,6 +84,19 @@ const TopSearchBar = () => {
                 </div>
               </div>
             </Link>{" "}
+            <Link href="/seller">
+              <button className="w-full px-[25px] py-[8px] text-[10px] md:text-[12px] lg:text-[18px]  relative rounded-md bg-primary-600 group font-medium  inline-flex items-center justify-center p-4  overflow-hidden text-white transition duration-300 ease-out border border-primary-500 shadow-md group">
+                <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-primary-500 group-hover:translate-x-0 ease">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </span>
+                <span className="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease">
+                  Become a seller &gt;
+                </span>
+                <span className="relative invisible">Become a seller</span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

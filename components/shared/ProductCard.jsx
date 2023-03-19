@@ -1,14 +1,13 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import {SecondaryButton} from "../theme/Button";
-import {useDispatch} from "react-redux";
-import {addToCart} from "../../redux/feature/cartSlice";
+import { SecondaryButton } from "../theme/Button";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/feature/cartSlice";
 import ReactStars from "react-stars";
-import {AiFillHeart, AiOutlineHeart} from "react-icons/ai";
-import {useRouter} from "next/router";
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import { useRouter } from "next/router";
 import StarRatings from "react-star-ratings";
 import Link from "next/link";
-
 const ProductCard = ({product}) => {
     const [wishlist,
         setWishlist] = useState(false);
