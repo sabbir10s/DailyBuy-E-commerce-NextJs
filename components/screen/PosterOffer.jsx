@@ -15,8 +15,8 @@ const PosterOffer = () => {
               <p className="text-gray-500 text-[10px] md:text-[12px] lg:text-[14px]">Weekend discount upto 40%</p>
             </div>
             <div className="mt-5">
-              <Link href="/categories">
-                <PrimaryButton title="Shop Now" />
+            <Link href="/categories">
+                <PrimaryButton title="SHOP NOW" />
               </Link>
             </div>
           </div>
@@ -30,8 +30,8 @@ const PosterOffer = () => {
                 <p className="text-gray-500 text-[10px] md:text-[12px] lg:text-[14px]">Weekend discount upto 40%</p>
               </div>
               <div className="mt-5">
-                <Link href="/categories">
-                  <PrimaryButton title="Shop Now" />
+              <Link href="/categories">
+                  <PrimaryButton title="SHOP NOW" />
                 </Link>
               </div>
             </div>
