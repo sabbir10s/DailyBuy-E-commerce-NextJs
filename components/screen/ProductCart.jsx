@@ -3,6 +3,7 @@ import ProcessingSteps from "./ProcessingSteps";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, decreaseCart, removeFromCart } from "@/redux/feature/cartSlice";
 import Link from "next/link";
+import Image from "next/image";
 
 const ProductCart = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -31,7 +32,13 @@ const ProductCart = () => {
                 <div key={idx} className=" grid grid-cols-3 lg:hidden gap-2 mt-3 items-center border-b border-gray-100 pb-2">
                   <div className="flex space-x-2 items-center col-span-2">
                     <div className="w-[80px] h-[80px] bg-gray-50  rounded-2xl">
-                      <Image src={item?.main_img_url} className="w-full h-full object-center object-fill" alt="product-img" />
+                      <Image
+                        width={100}
+                        height={100}
+                        src={item?.main_img_url}
+                        className="w-full h-full object-center object-fill"
+                        alt="product-img"
+                      />
                     </div>
                     <div>
                       <p className="font-semibold text-sm">{item?.product_name.slice(0, 18)}...</p>
@@ -104,7 +111,13 @@ const ProductCart = () => {
                   <div className="col-span-3 ">
                     <div className="flex space-x-2 items-center">
                       <div className="w-[120px] h-[120px] bg-gray-50  rounded-2xl">
-                        <Image src={item?.main_img_url} className="w-full h-full object-center object-fill" alt="product-img" />
+                        <Image
+                          width={100}
+                          height={100}
+                          src={item?.main_img_url}
+                          className="w-full h-full object-center object-fill"
+                          alt="product-img"
+                        />
                       </div>
                       <p className="font-semibold text-base">{item?.product_name}</p>
                     </div>

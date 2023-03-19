@@ -11,7 +11,7 @@ const ProcessingSteps = () => {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 items-center w-full lg:w-5/6 mx-0 lg:mx-auto">
         <div className="bg-primary-50/60 lg:bg-white rounded p-3 lg:p-0 block lg:flex items-center lg:space-x-3 lg:border-r ">
           {/* <Image src={stepImg1} alt="" /> */}
-          <Image src={stepImg1}/>
+          <Image src={stepImg1} alt=""/>
           <p className="font-medium text-base">Fastest Delivery</p>
         </div>{" "}
         <div className="bg-primary-50/60 lg:bg-white rounded p-3 lg:p-0 block lg:flex items-center lg:space-x-3 lg:border-r ">
