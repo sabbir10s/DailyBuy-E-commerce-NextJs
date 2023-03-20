@@ -34,7 +34,13 @@ const ProductCart = () => {
                   <div key={idx} className="grid grid-cols-3 lg:hidden gap-2 items-center border-b border-gray-100 pb-2">
                     <div className="flex space-x-2 items-center col-span-2">
                       <div className="w-[80px] h-[80px] bg-gray-50  rounded-2xl">
-                        <Image src={item?.main_Image_url} className="w-full h-full object-center object-fill" alt="product-Image" />
+                      <Image
+                        width={100}
+                        height={100}
+                        src={item?.main_img_url}
+                        className="w-full h-full object-center object-fill"
+                        alt="product-img"
+                      />
                       </div>
                       <div>
                         <p className="text-primary-600  font-semibold">${item?.price}.00</p>
@@ -117,7 +123,13 @@ const ProductCart = () => {
                     <div className="col-span-3 ">
                       <div className="flex space-x-2 items-center">
                         <div className="w-[100px] h-[100px] bg-gray-50 rounded-2xl">
-                          <Image src={item?.main_Image_url} className="w-full h-full object-cover object-center" alt="product-Image" />
+                        <Image
+                        width={100}
+                        height={100}
+                        src={item?.main_img_url}
+                        className="w-full h-full object-center object-fill"
+                        alt="product-img"
+                      />
                         </div>
                         <p className="font-semibold text-[14px]">{item?.product_name}</p>
                       </div>
