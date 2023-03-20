@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import { RiHeartLine, RiUser3Line} from 'react-icons/ri';
 import Modal from '../AuthenticationModal';
 import Link from 'next/link';
-import ActiveLink from '@/hooks/ActiveLink';
+import { useRouter } from 'next/router';
 
 const Sidebar = ({visible, handleCloseSidebar}) => {
+    const router = useRouter()
     const [showModal,
         setShowModal] = useState(false);
     const handleOnClose = () => {
@@ -47,19 +48,22 @@ const Sidebar = ({visible, handleCloseSidebar}) => {
                     </div>
                     <ul className="flex flex-col items-start gap-6 pt-6 text-black text-sm lg:text-base">
                         <li onClick={handleCloseSidebar} className="txtHover active font-medium">
-                            <ActiveLink href="/">Home</ActiveLink>
+                            <Link className={router.pathname == "/" ? "text-primary-600" : "text-black"} href="/">Home</Link>
+                        </li>
+                        <li onClick={handleCloseSidebar} className="txtHover active font-medium">
+                        <Link className={router.pathname == "/categories" ? "text-primary-600" : "text-black"} href="/categories">Shop</Link>
                         </li>
                         <li onClick={handleCloseSidebar} className="txtHover font-medium">
                             {" "}
-                            <ActiveLink href="/blog">Blog</ActiveLink>
+                            <Link className={router.pathname == "/blog" ? "text-primary-600" : "text-black"} href="/blog">Blog</Link>
                         </li>
                         <li onClick={handleCloseSidebar} className="txtHover font-medium">
                             {" "}
-                            <ActiveLink href="/about">About us</ActiveLink>
+                            <Link className={router.pathname == "/about" ? "text-primary-600" : "text-black"} href="/about">About us</Link>
                         </li>
                         <li onClick={handleCloseSidebar} className="txtHover font-medium">
                             {" "}
-                            <ActiveLink href="/contact">Contact us</ActiveLink>
+                            <Link className={router.pathname == "/contact" ? "text-primary-600" : "text-black"} href="/contact">Contact us</Link>
                         </li>
                     </ul>
                 </div>
