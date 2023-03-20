@@ -7,6 +7,8 @@ import { Wrapper } from "@googlemaps/react-wrapper";
 import { useRouter } from "next/router";
 import MenuBar from "@/components/shared/MenuBar";
 import MyNav from "@/components/shared/Nav/MyNav";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 export default function App({ Component, pageProps }) {
@@ -19,6 +21,7 @@ export default function App({ Component, pageProps }) {
 
       <MyNav />
       <Component {...pageProps} />
+      <ToastContainer />
     </Wrapper>
   </Provider>;
 }
