@@ -14,12 +14,10 @@ const SmallProductImg = ({ setActiveImg, small_img_url }) => {
   return (
     <div>
       <Slider {...settings}>
-        {small_img_url.map((img_url, idx) => (
-          <>
-            <div key={idx} className=" px-2 border-r border-gray-100">
-            <Image onClick={() => setActiveImg(img_url)} className="w-full h-full object-center object-fill rounded-2xl" width={100} height={100} src={img_url} alt="" />
-          </div>
-          </>
+        {small_img_url.map((img_url, index) => (
+         <div key={index} className=" px-2 border-r border-gray-100">
+         <Image onClick={() => setActiveImg(img_url)} className="w-full h-full object-center object-fill rounded-2xl" width={100} height={100} src={img_url} alt="" />
+       </div>
         ))}
         <div className=" px-2">
           <Image onClick={() => setActiveImg(small4)} className="w-full h-full object-center object-fill rounded-2xl" width={100} height={100} src={small4} alt="" />

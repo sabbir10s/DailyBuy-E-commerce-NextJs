@@ -1,6 +1,5 @@
 import React from 'react';
 import ProcessingSteps from './ProcessingSteps';
-import MenuBar from '../shared/MenuBar';
 import bannerImg from '../../assets/about/about_img_one.png'
 import qualityAndFresh from '../../assets/icon/qualityAndFresh.png'
 import organic from '../../assets/icon/organic.png'
@@ -11,7 +10,6 @@ import Image from "next/image";
 const AboutV2 = () => {
     return (
         <>
-         <MenuBar/>
             <div className='mt-[80px] lg:mt-[20px] flex flex-col gap-[30px] md:gap-[40px] lg:gap-[80px]'>
                 <div className='flex flex-col lg:flex-row items-center gap-5 md:gap-7 lg:gap-10 container'>
                     <Image className='w-full lg:w-[450px] rounded-[10px]' src={bannerImg} alt="" />
