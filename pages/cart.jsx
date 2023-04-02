@@ -1,5 +1,5 @@
+import ProductCart from "@/components/screen/Cart/ProductCart";
 import React from "react";
-import ProductCart from "../components/screen/ProductCart";
 
 const cart = () => {
   return (
