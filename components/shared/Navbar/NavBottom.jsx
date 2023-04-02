@@ -8,11 +8,10 @@ import breakfast from '../../../assets/icon/categoryGrayIcon (5).png'
 import biscuits from '../../../assets/icon/categoryGrayIcon (6).png'
 import beverages from '../../../assets/icon/categoryGrayIcon (7).png'
 import grocery from '../../../assets/icon/categoryGrayIcon (8).png'
-import Navbar from "../../screen/Navbar";
+import NavItems from "./NavItems";
 import Link from "next/link";
-import Image from "next/image";
 
-const Bottom = () => {
+const NavBottom = () => {
     return (
         <div className="container hidden lg:flex items-center justify-between gap-5 mt-2">
             <ul className="flex items-center">
@@ -40,28 +39,28 @@ const Bottom = () => {
                         className="shadow-custom opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white hidden lg:block rounded-b-md absolute top-12 left-0 w-full transition duration-300 delay-100 ease-in-out">
                         <li className="p-3 border-b border-gray-100 txtHover text-gray-600">
                             <Link className="flex items-center gap-[8px]" href='/categories'>
-                                <Image className="w-[25px]" src={fruits} alt=""/>
+                                <img className="w-[25px]" src={fruits} alt=""/>
                                 <span>Fruits & Vegetable</span>
                             </Link>
                         </li>
                         <li
                             className="p-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
                             <Link className="flex items-center gap-[8px]" href='/categories'>
-                                <Image className="w-[25px]" src={meats} alt=""/>
+                                <img className="w-[25px]" src={meats} alt=""/>
                                 <span>Meats & Fish</span>
                             </Link>
                         </li>
                         <li
                             className="p-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
                             <Link className="flex items-center gap-[8px]" href='/categories'>
-                                <Image className="w-[25px]" src={breads} alt=""/>
+                                <img className="w-[25px]" src={breads} alt=""/>
                                 <span>Breads & Bakery</span>
                             </Link>
                         </li>
                         <li
                             className="p-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
                             <Link className="flex items-center gap-[8px]" href='/categories'>
-                                <Image className="w-[25px]" src={frozen} alt=""/>
+                                <img className="w-[25px]" src={frozen} alt=""/>
                                 <span>Frozen Foods</span>
                             </Link>
 
@@ -69,28 +68,28 @@ const Bottom = () => {
                         <li
                             className="p-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
                             <Link className="flex items-center gap-[8px]" href='/categories'>
-                                <Image className="w-[25px]" src={breakfast} alt=""/>
+                                <img className="w-[25px]" src={breakfast} alt=""/>
                                 <span>Breakfast & Dairy</span>
                             </Link>
                         </li>
                         <li
                             className="p-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
                             <Link className="flex items-center gap-[8px]" href='/categories'>
-                                <Image className="w-[25px]" src={biscuits} alt=""/>
+                                <img className="w-[25px]" src={biscuits} alt=""/>
                                 <span>Biscuits & Snacks</span>
                             </Link>
                         </li>
                         <li
                             className="p-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
                             <Link className="flex items-center gap-[8px]" href='/categories'>
-                                <Image className="w-[25px]" src={beverages} alt=""/>
+                                <img className="w-[25px]" src={beverages} alt=""/>
                                 <span>Beverages</span>
                             </Link>
                         </li>
                         <li
                             className="p-3 border-b border-gray-100 txtHover text-gray-600 flex items-center gap-[8px]">
                             <Link className="flex items-center gap-[8px]" href='/categories'>
-                                <Image className="w-[25px]" src={grocery} alt=""/>
+                                <img className="w-[25px]" src={grocery} alt=""/>
                                 <span>Grocery</span>
                             </Link>
                         </li>
@@ -98,7 +97,9 @@ const Bottom = () => {
                 </div>
             </ul>
 
-            <Navbar/>
+            <div>
+                <NavItems/>
+            </div>
             <div className="flex items-center gap-2">
               <BiSupport className="text-3xl text-gray-900"/>
                 <div className="flex flex-col items-start">
@@ -110,4 +111,4 @@ const Bottom = () => {
     );
 };
 
-export default Bottom;
+export default NavBottom;

@@ -5,13 +5,13 @@ import smallLogo from "../../../assets/logo/logo.png";
 import {RiShoppingBagLine, RiHeartLine, RiUser3Line, RiSearchLine} from 'react-icons/ri';
 import {CgMenuLeftAlt} from 'react-icons/cg';
 import {AiFillCloseCircle} from 'react-icons/ai';
-import Bottom from "./Bottom";
 import Sidebar from "./Sidebar";
-import Top from "./Top";
+import AuthenticationModal from "../AuthenticationModal";
+import NavTop from "./NavTop";
+import NavBottom from "./NavBottom";
 import Link from "next/link";
 import Image from "next/image";
-import AuthenticationModal from "../AuthenticationModal";
-const MyNav = () => {
+const Navbar = () => {
     const {cartItems} = useSelector((state) => state.cart);
     const [showModal,
         setShowModal] = useState(false);
@@ -35,7 +35,7 @@ const MyNav = () => {
 
     return (
         <div>
-            <Top/>
+            <NavTop/>
             <div
                 className="border border-gray-100/60 fixed lg:static top-0 z-50 bg-white w-full">
                 <div className="container ">
@@ -45,7 +45,7 @@ const MyNav = () => {
                             className="block lg:hidden text-black">
                             <CgMenuLeftAlt className="text-2xl lg:text-4xl"/>
                         </button>
-                        <Link href="/" className="hidden lg:block" >
+                        <Link className="hidden lg:block " href="/">
                             <Image className=" w-[180px]" src={logo} alt=""/>
                         </Link>
                         <Link className="w-full flex justify-center lg:hidden" href="/">
@@ -107,12 +107,11 @@ const MyNav = () => {
 
             </div>
 }
-            <Bottom/>
+            <NavBottom/>
             <AuthenticationModal onClose={handleOnClose} visible={showModal}/>
             <Sidebar handleCloseSidebar={handleCloseSidebar} visible={showSidebar}/>
         </div>
     );
 };
 
-
-export default MyNav;
+export default Navbar;

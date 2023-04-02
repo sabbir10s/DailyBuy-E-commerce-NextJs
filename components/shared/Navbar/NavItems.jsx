@@ -3,16 +3,16 @@ import { useRouter } from "next/router";
 import React from "react";
 
 
-const Navbar = () => {
+const NavItems = () => {
   const router = useRouter()
   return (
     <nav className="hidden lg:block">
       <ul className="flex items-center gap-10 py-3 text-black">
-        <li className="txtHover active font-medium">
+        <li className="txtHover font-medium">
           <Link  className={router.pathname == "/" ? "text-primary-600" : "text-gray-700"}
     href="/">Home</Link>
         </li>
-        <li className="txtHover active font-medium">
+        <li className="txtHover font-medium">
           <Link className={router.pathname == "/categories" ? "text-primary-600" : "text-gray-700"} href="/categories">Shop</Link>
         </li>
         <li className="txtHover font-medium">
@@ -32,4 +32,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavItems;

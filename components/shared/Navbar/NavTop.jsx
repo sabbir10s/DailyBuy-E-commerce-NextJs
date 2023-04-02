@@ -1,9 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-
-
-const Top = () => {
+const NavTop = () => {
     return (
         <div className="hidden bg-white lg:block">
             <div className="container py-2 ">
@@ -41,4 +39,4 @@ const Top = () => {
     );
 };
 
-export default Top;
+export default NavTop;
