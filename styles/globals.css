@@ -48,7 +48,7 @@ li {
 }
 
 input[type="range"] {
-  height: 26px;
+  height: 2px;
   -webkit-appearance: none;
   margin: 10px 0;
   width: 100%;
