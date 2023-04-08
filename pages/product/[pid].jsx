@@ -62,7 +62,7 @@ const ProductDetails = () => {
     }
     const {
         small_img_url,
-        product_name,
+        name,
         price,
         rating,
         review,
@@ -102,7 +102,7 @@ const ProductDetails = () => {
                     </div>
                     <div className="col-span-1 lg:col-span-2">
                         <div>
-                            <h2 className=" text-[20px] md:text-[32px] font-semibold">{product_name}</h2>
+                            <h2 className=" text-[20px] md:text-[32px] font-semibold">{name}</h2>
                             {/* rating section */}
                             <div
                                 className="flex items-center justify-between lg:justify-start lg:space-x-8 mt-5 flex-wrap">

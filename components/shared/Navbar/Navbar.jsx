@@ -11,13 +11,15 @@ import NavTop from "./NavTop";
 import NavBottom from "./NavBottom";
 import Link from "next/link";
 import Image from "next/image";
+import ShoppingCart from "../ShoppingCart/ShoppingCart";
 const Navbar = () => {
     const {cartItems} = useSelector((state) => state.cart);
     const [showModal,
         setShowModal] = useState(false);
     const [showSidebar,
         setShowSidebar] = useState(false);
-
+        const [showCart,
+            setShowCart] = useState(false);
     const [showSearch,
         setShowSearch] = useState(false)
     const handleShowSearch = () => {
@@ -31,6 +33,9 @@ const Navbar = () => {
     };
     const handleCloseSidebar = () => {
         setShowSidebar(false);
+    };
+    const handleCloseCart = () => {
+        setShowCart(false);
     };
 
     return (
@@ -75,15 +80,13 @@ const Navbar = () => {
                                     </span>
                                 </button>
                             </Link>
-                            <Link href="/cart">
-                                <button className="relative flex items-center" type="button">
+                            <button onClick={()=>setShowCart(true)} className="relative flex items-center" type="button">
                                     <RiShoppingBagLine className="text-[24px]"/>
                                     <span
                                         className="absolute top-[-10px] left-[18px] text-[11px] text-white bg-primary-600 rounded-full h-[20px] w-[18px] flex items-center justify-center">
                                         {cartItems.length}
                                     </span>
-                                </button>
-                            </Link>
+                            </button>
                             <button className="hidden lg:block" onClick={() => setShowModal(true)}>
                                 <RiUser3Line className="text-[24px]"/>
                             </button>{" "}
@@ -110,6 +113,7 @@ const Navbar = () => {
             <NavBottom/>
             <AuthenticationModal onClose={handleOnClose} visible={showModal}/>
             <Sidebar handleCloseSidebar={handleCloseSidebar} visible={showSidebar}/>
+            <ShoppingCart handleCloseCart={handleCloseCart} visible={showCart}/>
         </div>
     );
 };
