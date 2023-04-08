@@ -5,7 +5,7 @@ import {addToCart} from "../../redux/feature/cartSlice";
 import ReactStars from "react-stars";
 import {AiFillHeart, AiOutlineHeart} from "react-icons/ai";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import {useRouter} from "next/router";
 
 const ProductCard = ({product}) => {
     const router = useRouter();
@@ -23,7 +23,8 @@ const ProductCard = ({product}) => {
         discount,
         main_img_url,
         del_price,
-        rating
+        rating,
+        stock
     } = product;
     const handleProductDetails = () => {
         router.push(`/product/${_id}`);
@@ -80,6 +81,7 @@ const ProductCard = ({product}) => {
                     </div>
                     <div className="mt-3">
                         <SecondaryButton
+                            stock={stock}
                             handleAddToCart={handleAddToCart}
                             product={product}
                             title="Add to cart"
