@@ -1,5 +1,6 @@
 import React from 'react';
 import productImg from '../../../assets/products/product (1).png'
+import Image from 'next/image';
 const OrderItem = () => {
     return (
         <div className="w-full pt-8 overflow-hidden rounded-lg shadow-lg">
@@ -19,7 +20,7 @@ const OrderItem = () => {
                             <td className="px-4 py-3">
                                 <div className="flex items-center text-sm">
                                     <div className="relative w-8 h-8 mr-3 rounded-full md:block">
-                                        <img
+                                        <Image
                                             className="object-cover w-full h-full rounded-full"
                                             src={productImg}
                                             alt=""

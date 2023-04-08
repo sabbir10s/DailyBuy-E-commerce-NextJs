@@ -10,7 +10,7 @@ const Error = () => {
         <div className="flex-1 min-h-full min-w-full rounded-3xl bg-white shadow-custom  p-10 lg:p-20 text-gray-800 relative md:flex items-center text-center md:text-left">
           <div className="w-full md:w-1/2">
             <div className="mb-10 lg:mb-20">
-              <Image src={logo} alt="" />
+              <Image width={200} height={200} src={logo} alt="" />
             </div>
             <div className="mb-10 md:mb-20 text-gray-600 font-light">
               <h1 className="font-black uppercase text-3xl lg:text-5xl text-yellow-500 mb-10">You seem to be lost!</h1>
@@ -38,7 +38,7 @@ const Error = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 text-center">
-            <img src={notFoundImg} alt="" />
+            <Image width={500} height={500} src={notFoundImg} alt="" />
           </div>
         </div>
         <div className="w-64 md:w-96 h-96 md:h-full bg-secondary-200 bg-opacity-30 absolute -top-64 md:-top-96 right-20 md:right-32 rounded-full pointer-events-none -rotate-45 transform"></div>

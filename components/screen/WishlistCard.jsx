@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactStars from 'react-stars';
 import {AiOutlineDelete} from 'react-icons/ai';
+import Image from 'next/image';
 const WishlistCard = ({item}) => {
   const {main_img_url, nickname, rating, price, stock} = item
   return (
@@ -11,7 +12,7 @@ const WishlistCard = ({item}) => {
         <div
           className='lg:col-span-3 flex flex-col md:flex md:flex-row items-center gap-[20px]'>
           <div className=" w-full md:w-[80px] md:h-[80px] bg-gray-50  rounded-[10px]">
-            <img
+            <Image
               src={main_img_url}
               className="w-full h-full object-center object-fill"
               alt="product-img"/>

@@ -5,6 +5,7 @@ import emptyCart from "../../../assets/icon/emptyCart.png";
 import {FullWidthButton, PrimaryButton} from "../../theme/Button";
 import CartItem from "./CartItem";
 import Link from "next/link";
+import Image from "next/image";
 const ProductCart = () => {
     const {cartItems} = useSelector((state) => state.cart);
 
@@ -15,7 +16,7 @@ const ProductCart = () => {
             <div className="container ">
                 <h2
                     className=" text-[18px] md:text-[25px] lg:text-[48px] font-semibold mt-[100px] lg:mt-[40px] mb-[15px] lg:mb-[32px]">Your Cart</h2>
-                {cartItems.length && <div>
+                {cartItems.length>0 && <div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-8 mt-4">
                         <div className=" col-span-3 bg-[#F9FAFB] rounded-[10px] shadow-custom">
@@ -75,7 +76,7 @@ const ProductCart = () => {
                 </div>
 }
                 {cartItems.length === 0 && <div className="flex flex-col items-center gap-8 py-20 mt-[50px] ">
-                    <img className="w-[200px]" src={emptyCart} alt=""/>
+                    <Image className="w-[200px]" src={emptyCart} alt=""/>
                     <div className="text-center">
                         <h2 className="text-xl text-gray-500 font-semibold mb-6">Your cart is empty!</h2>
                         <Link
