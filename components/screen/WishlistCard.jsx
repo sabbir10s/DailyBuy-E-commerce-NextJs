@@ -13,6 +13,8 @@ const WishlistCard = ({item}) => {
           className='lg:col-span-3 flex flex-col md:flex md:flex-row items-center gap-[20px]'>
           <div className=" w-full md:w-[80px] md:h-[80px] bg-gray-50  rounded-[10px]">
             <Image
+            width={80}
+            height={80}
               src={main_img_url}
               className="w-full h-full object-center object-fill"
               alt="product-img"/>

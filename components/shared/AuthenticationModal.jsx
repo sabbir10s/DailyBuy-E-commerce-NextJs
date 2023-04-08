@@ -25,7 +25,7 @@ const AuthenticationModal = ({visible, onClose}) => {
             path ==='signUp' && <SignUp setPath={setPath} />
           }
           {
-            path ==='forgetPassword' && <ForgotPassword setPath={setPath} />
+            path ==='forgetPassword' && <ForgotPassword setPath={setPath} onClose={onClose} />
           }
           {
             path ==='terms' && <TermsCondition setPath={setPath} />
