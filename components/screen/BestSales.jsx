@@ -31,7 +31,7 @@ const BestSales = () => {
   return (
     <>
       <div className=" mt-8 lg:mt-16 container">
-        <div className="flex justify-between items-center mt-[25px] md:mt-[35px] lg:mt-[50px] mb-[16px] lg:mb-[29px]">
+        <div id="recommended" className="flex justify-between items-center mt-[25px] md:mt-[35px] lg:mt-[50px] mb-[16px] lg:mb-[29px]">
           <h2 className="text-sm md:text-2xl lg:text-4xl font-semibold text-center lg:text-left text-[#2E2E2E]">Recommended for you</h2>
           <Link
             href="/categories"
@@ -60,13 +60,16 @@ const BestSales = () => {
           )}
           {visible === productData.length && (
             <div className="mt-12 flex justify-center">
+             <a href="#recommended">
               <button
                 onClick={showLessItem}
                 className="bg-primary-600 hover:bg-primary-500 duration-300 transition hover:shadow-custom hover:scale-110 text-white font-semibold rounded-md uppercase ease-in-out px-[20px] py-[9px] flex items-center gap-1 text-[14px] md:text-[14px]"
               >
+                
                 <span>Show Less</span>
                 <BiChevronUp className="text-xl" />
               </button>
+                </a>
             </div>
           )}
         </div>
