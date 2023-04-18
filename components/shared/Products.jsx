@@ -54,12 +54,12 @@ const Products = ({ product }) => {
             </svg>
           )}
         </div>{" "}
-        <Link href={`/product/${product?.id}`}>
+        <Link href={`/product/${product?._id}`}>
           <div className="w-[300px] mx-auto h-[250px]">
             <Image src={product?.main_img_url} className="w-full h-full object-center object-fill" alt="" />
           </div>{" "}
         </Link>
-        <Link href={`/product/${product?.id}`}>
+        <Link href={`/product/${product?._id}`}>
           <div className="space-y-3 lg:mt-1">
             <h3 className="text-black font-semibold text-[12px] md:text-[18px]">{product?.nickname}</h3>
             <div className="flex justify-between items-center">

@@ -8,11 +8,11 @@ import breakfast from '../../../assets/icon/categoryGrayIcon (5).png'
 import biscuits from '../../../assets/icon/categoryGrayIcon (6).png'
 import beverages from '../../../assets/icon/categoryGrayIcon (7).png'
 import grocery from '../../../assets/icon/categoryGrayIcon (8).png'
-import Navbar from "../../screen/Navbar";
+import NavItems from "./NavItems";
 import Link from "next/link";
 import Image from "next/image";
 
-const Bottom = () => {
+const NavBottom = () => {
     return (
         <div className="container hidden lg:flex items-center justify-between gap-5 mt-2">
             <ul className="flex items-center">
@@ -98,7 +98,9 @@ const Bottom = () => {
                 </div>
             </ul>
 
-            <Navbar/>
+            <div>
+                <NavItems/>
+            </div>
             <div className="flex items-center gap-2">
               <BiSupport className="text-3xl text-gray-900"/>
                 <div className="flex flex-col items-start">
@@ -110,4 +112,4 @@ const Bottom = () => {
     );
 };
 
-export default Bottom;
+export default NavBottom;

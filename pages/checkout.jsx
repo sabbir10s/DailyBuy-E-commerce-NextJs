@@ -193,7 +193,7 @@ const Checkout = () => {
                         <Image width={100} height={100} src={item?.main_img_url} className="w-full h-full object-center object-fill" alt="product-Image" />
                       </div>
                       <div>
-                        <p className="font-semibold text-primary-600">{item?.product_name}</p>
+                        <p className="font-semibold text-primary-600">{item?.name}</p>
                         <p className="font-semibold">
                           {item?.cartQuantity} x ${item?.price}.00
                         </p>

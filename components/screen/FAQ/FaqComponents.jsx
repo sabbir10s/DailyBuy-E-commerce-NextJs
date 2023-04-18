@@ -1,10 +1,6 @@
 import React from 'react';
 import FaqForm from './FaqForm';
 import Questions from './Questions';
-// import profile from '../../assets/icon/Profile.png' import wallet from
-// '../../assets/icon/wallet.png' import refund from
-// '../../assets/icon/refund.png' import { MdOutlineNavigateNext } from
-// 'react-icons/md';
 
 const FaqComponents = () => {
     return (
@@ -50,78 +46,6 @@ const FaqComponents = () => {
                     <FaqForm/>
                 </div>
             </div>
-            {/* <div className='flex flex-col lg:flex-row items-center justify-around gap-5 lg:gap-10'>
-                <div className='border-[1px] border-[#E9E9E9] rounded-[10px] w-full lg:w-[417px] card p-[10px] md:p-[24px]'>
-                    <div className='bg-[#E6F6F3] w-10 h-10 rounded-full flex justify-center items-center'>
-                        <img src={profile} alt="" />
-                    </div>
-                    <h1 className='text-[#383838] text-xl font-bold mt-[16px] mb-[8px]'>Account</h1>
-                    <div className='flex items-start gap-1 text-sm text-[#626463]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken the possession by the pasion?</p>
-                    </div>
-               <button className='text-primary-600 text-sm font-semibold mt-[32px]'>Show All</button>
-                </div>
-                <div className='border-[1px] border-[#E9E9E9] rounded-[10px] w-full lg:w-[417px] card p-[10px] md:p-[24px]'>
-                    <div className='bg-[#E6F6F3] w-10 h-10 rounded-full flex justify-center items-center'>
-                        <img src={wallet} alt="" />
-                    </div>
-                    <h1 className='text-[#383838] text-xl font-bold mt-[16px] mb-[8px]'>Payment</h1>
-                    <div className='flex items-start gap-1 text-sm text-[#626463]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken the possession by the pasion?</p>
-                    </div>
-               <button className='text-primary-600 text-sm font-semibold mt-[32px]'>Show All</button>
-                </div>
-                <div className='border-[1px] border-[#E9E9E9] rounded-[10px] w-full lg:w-[417px] card p-[10px] md:p-[24px]'>
-                    <div className='bg-[#E6F6F3] w-10 h-10 rounded-full flex justify-center items-center'>
-                        <img src={refund} alt="" />
-                    </div>
-                    <h1 className='text-[#383838] text-xl font-bold mt-[16px] mb-[8px]'>Refund</h1>
-                    <div className='flex items-start gap-1 text-sm text-[#626463]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken possession ?</p>
-                    </div>
-                    <div className='flex items-start gap-1 text-sm text-[#626463] mt-[8px]'>
-                    <span className='mt-1'><MdOutlineNavigateNext/></span>
-                    <p>wonderful serenity has taken the possession by the pasion?</p>
-                    </div>
-               <button className='text-primary-600 text-sm font-semibold mt-[32px]'>Show All</button>
-                </div>
-
-            </div> */}
         </div>
     );
 };
