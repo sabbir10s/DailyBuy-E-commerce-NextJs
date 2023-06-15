@@ -48,14 +48,7 @@ const ProductDetails = () => {
             </Helmet>
             <div className="container mt-0 md:mt-[30px]">
                 <TopSection productInfo={productInfo}/>
-
-                {/*==================================
-              =========description Start=========
-              ==================================*/}
                 <ProductDescription productInfo={productInfo}/>
-                {/*==================================
-          =========description End=========
-          ==================================*/}
             </div>
 
             {/* Related Product */}
