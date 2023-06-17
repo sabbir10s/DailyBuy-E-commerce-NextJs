@@ -36,7 +36,7 @@ const NavItems = () => {
                         </svg>
                     </button>
                     <ul
-                        className="absolute left-0 mt-0 w-48 p-3 bg-white border border-gray-300 rounded-md shadow-lg hidden group-hover:block space-y-3">
+                        className="absolute z-10 left-0 mt-0 w-48 p-3 bg-white border border-gray-300 rounded-md shadow-lg hidden group-hover:block space-y-3">
                          
                           <li
                             className={router.pathname == "/invoice" ? "text-primary-600" : "text-gray-700"}>
